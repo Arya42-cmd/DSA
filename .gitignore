@@ -1,0 +1,14 @@
+@"
+# Compiled executables
+*.exe
+
+# Object files
+*.o
+*.obj
+
+# VS Code settings
+.vscode/
+
+# Temporary files
+*.log
+"@ | Set-Content .gitignore
