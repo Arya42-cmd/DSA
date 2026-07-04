@@ -11,4 +11,3 @@
 
 # Temporary files
 *.log
-"@ | Set-Content .gitignore
