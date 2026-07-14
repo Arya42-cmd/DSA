@@ -1,24 +1,30 @@
-#include <iostream>
+#include <bits/stdc++.h>
 using namespace std;
 
-int main() {
-    int n = 5;
+void binary_triangle(int n){
+    int start;
 
-    for (int i = 1; i <= n; i++) {
-        int val;
+    for(int i = 1; i <= n; i++){
 
-        if (i % 2 == 1)
-            val = 1;      // Odd row starts with 1
+        if(i % 2 != 0)
+            start = 1;
         else
-            val = 0;      // Even row starts with 0
+            start = 0;
 
-        for (int j = 1; j <= i; j++) {
-            cout << val << " ";
-            val = 1 - val;   // Toggle between 0 and 1
+        for(int j = 1; j <= i; j++){
+            cout << start << " ";
+            start = 1 - start;
         }
 
         cout << endl;
     }
+}
+
+int main(){
+    int n;
+    cin >> n;
+
+    binary_triangle(n);
 
     return 0;
 }
